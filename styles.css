@@ -1,0 +1,62 @@
+/* styles.css */
+
+/* Ensure the body takes the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set the background image for the body */
+body {
+    background: url('https://wallpapercave.com/wp/k96Zssi.jpg') no-repeat center center fixed;
+    background-size: cover; /* Make sure the image covers the entire body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Styling for the container */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.weather-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 65%;
+}
+
+.weather-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #6a11cb;
+    color: white;
+    cursor: pointer;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info h2 {
+    margin: 10px 0;
+}
+
+.weather-info p {
+    margin: 10px 0;
+}
+.weather-icon {
+    width: 90px;
+    height: 90px;
+}
+
