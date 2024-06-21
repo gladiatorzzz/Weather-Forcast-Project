@@ -1,4 +1,4 @@
-
+/// script.js
 
 document.getElementById('search-btn').addEventListener('click', getWeather);
 
@@ -9,7 +9,7 @@ function getWeather() {
         return;
     }
 
-    const apiKey = 'a521599b57ca93e7ce15965bf01ec9ef'; 
+    const apiKey = 'a521599b57ca93e7ce15965bf01ec9ef'; // Replace with your actual OpenWeatherMap API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${encodeURIComponent(apiKey)}&units=metric`;
 
     fetch(apiUrl)
@@ -46,27 +46,27 @@ function displayWeather(data) {
     // Map weather conditions to day and night icons
     switch (weather[0].main.toLowerCase()) {
         case 'clear':
-            weatherIconUrl = isDay ? 'images/sunny_day.png' : 'images/clear_night.png'; 
+            weatherIconUrl = isDay ? 'images/sunny_day.png' : 'images/clear_night.png'; // Replace with your sunny day and clear night icon URLs
             break;
         case 'clouds':
-            weatherIconUrl = isDay ? 'images/cloudy_day.png' : 'images/cloudy_night.png'; 
+            weatherIconUrl = isDay ? 'images/cloudy_day.png' : 'images/cloudy_night.png'; // Replace with your cloudy day and cloudy night icon URLs
             break;
         case 'rain':
         case 'drizzle':
-            weatherIconUrl = 'images/rainy.png'; 
+            weatherIconUrl = 'images/rainy.png'; // Replace with your rainy icon URL
             break;
         case 'thunderstorm':
-            weatherIconUrl = isDay ? 'images/thunderstorm_day.png' :'images/thunderstorm_night.png'; 
+            weatherIconUrl = isDay ? 'images/thunderstorm_day.png' :'images/thunderstorm_night.png'; // Replace with your thunderstorm icon URL
             break;
         case 'mist':
-            weatherIconUrl = 'images/mist.png'; 
+            weatherIconUrl = 'images/mist.png'; // Replace with your rainy icon URL
             break; 
         case 'haze':
-            weatherIconUrl = 'images/haze.png'; 
+            weatherIconUrl = 'images/haze.png'; // Replace with your rainy icon URL
             break;     
                
         default:
-            weatherIconUrl = ''; 
+            weatherIconUrl = ''; // Default to no icon or handle other conditions
             break;
     }
 
