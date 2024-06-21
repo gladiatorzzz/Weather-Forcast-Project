@@ -1,13 +1,12 @@
-/* styles.css */
 
-/* Ensure the body takes the full viewport height */
+
+
 html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Set the background image for the body */
 body {
     background: url('https://wallpapercave.com/wp/k96Zssi.jpg') no-repeat center center fixed;
     background-size: cover; /* Make sure the image covers the entire body */
@@ -17,7 +16,7 @@ body {
     color: white;
 }
 
-/* Styling for the container */
+
 .container {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     padding: 20px;
