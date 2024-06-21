@@ -46,23 +46,23 @@ function displayWeather(data) {
     // Map weather conditions to day and night icons
     switch (weather[0].main.toLowerCase()) {
         case 'clear':
-            weatherIconUrl = isDay ? 'sunny_day.png' : 'clear_night.png'; // Replace with your sunny day and clear night icon URLs
+            weatherIconUrl = isDay ? 'images/sunny_day.png' : 'images/clear_night.png'; // Replace with your sunny day and clear night icon URLs
             break;
         case 'clouds':
-            weatherIconUrl = isDay ? 'cloudy_day.png' : 'cloudy_night.png'; // Replace with your cloudy day and cloudy night icon URLs
+            weatherIconUrl = isDay ? 'images/cloudy_day.png' : 'images/cloudy_night.png'; // Replace with your cloudy day and cloudy night icon URLs
             break;
         case 'rain':
         case 'drizzle':
-            weatherIconUrl = 'rainy.png'; // Replace with your rainy icon URL
+            weatherIconUrl = 'images/rainy.png'; // Replace with your rainy icon URL
             break;
         case 'thunderstorm':
-            weatherIconUrl = isDay ? 'thunderstorm_day.png' :'thunderstorm_night.png'; // Replace with your thunderstorm icon URL
+            weatherIconUrl = isDay ? 'images/thunderstorm_day.png' :'images/thunderstorm_night.png'; // Replace with your thunderstorm icon URL
             break;
         case 'mist':
-            weatherIconUrl = 'mist.png'; // Replace with your rainy icon URL
+            weatherIconUrl = 'images/mist.png'; // Replace with your rainy icon URL
             break; 
         case 'haze':
-            weatherIconUrl = 'haze.png'; // Replace with your rainy icon URL
+            weatherIconUrl = 'images/haze.png'; // Replace with your rainy icon URL
             break;     
                
         default:
@@ -74,8 +74,6 @@ function displayWeather(data) {
         <h2>Weather in ${name}, ${sys.country}</h2>
         <p><strong>Temperature:</strong> ${main.temp}°C</p>
         <p><strong>Feels Like:</strong> ${main.feels_like}°C</p>
-        <p><strong>Min Temperature:</strong> ${main.temp_min}°C</p>
-        <p><strong>Max Temperature:</strong> ${main.temp_max}°C</p>
         <p><strong>Humidity:</strong> ${main.humidity}%</p>
         <p><strong>Pressure:</strong> ${main.pressure} hPa</p>
         <img src="${weatherIconUrl}" alt="Weather Icon" style="width: 100px;"> <!-- Adjust size as needed -->
